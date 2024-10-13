@@ -15,6 +15,7 @@
 ##### 6. Jika memilih guest, user langsung masuk pada menu guest
 ##### 7. Pada menu guest, user hanya dapat melihat menu makanan/minuman saja
 
+## Dokumentasi Program Saat Dijalankan
 #### Tampilan Login
 ```
 ====> SELAMAT DATANG DI RESTORAN SHANHAIJING <====
