@@ -3,6 +3,18 @@
 
 # MINI PROJECT 2 PBO
 
+## Cara Kerja Program
+##### 1. User melakukan login terlebih dahulu
+##### 2. User memilih masuk sebagai admin/guest
+
+##### 3. Jika memilih admin, user maka disuruh input username dan password
+##### ps: disini, saya hanya membuat satu akun admin saja "Username = khalil" "Password = xixixi"
+##### 4. Setelah login admin, admin memilih ingin mengelola menu makanan/minuman terlebih dahulu
+##### 5. Pada pengelolaan menu makanan/minuman, admin dapat melakukan CRUD
+
+##### 6. Jika memilih guest, user langsung masuk pada menu guest
+##### 7. Pada menu guest, user hanya dapat melihat menu makanan/minuman saja
+
 #### Tampilan Login
 ```
 ====> SELAMAT DATANG DI RESTORAN SHANHAIJING <====
