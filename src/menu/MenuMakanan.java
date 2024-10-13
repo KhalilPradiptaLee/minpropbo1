@@ -1,40 +1,28 @@
 package menu;
 
-public class MenuMakanan {
-    private String namaMakanan;
-    private double hargaMakanan;
-    private String kategori;
+    public abstract class MenuMakanan extends Menu {
+        private String kategori;
 
-    // Constructor
-    public MenuMakanan(String nama, double harga, String kategori) {
-        this.namaMakanan = nama;
-        this.hargaMakanan = harga;
-        this.kategori = kategori;
+        // Constructor dan inheritence yang mewarisi dari constructor menu
+        public MenuMakanan(String nama, double harga, String kategori) {
+            super(nama, harga);
+            this.kategori = kategori;
+        }
+
+        // Penerapan polymorphism overriding pada method
+        @Override
+        public String getKategori() {
+            return kategori;
+        }
+
+        // Penerapan polymorphism overriding pada method
+        @Override
+        public void setKategori(String kategori) {
+            this.kategori = kategori;
+        }
+
+        // Penerapan polymorphism overriding pada method
+        @Override
+        public void setUkuran(String ukuran) {
+        }
     }
-
-
-    public String getNama() {
-        return namaMakanan;
-    }
-
-    public void setNama(String nama) {
-        this.namaMakanan = nama;
-    }
-
-    public double getHarga() {
-        return hargaMakanan;
-    }
-
-    public void setHarga(double harga) {
-        this.hargaMakanan = harga;
-    }
-
-    public String getKategori() {
-        return kategori;
-    }
-
-    public void setKategori(String kategori) {
-        this.kategori = kategori;
-    }
-
-}

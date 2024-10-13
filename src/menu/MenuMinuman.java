@@ -1,46 +1,35 @@
 package menu;
 
-public class MenuMinuman {
-    private String namaMinuman;
-    private double hargaMinuman;
+// Inheritence menuminuman yang mewarisi dari properti menu
+public class MenuMinuman extends Menu {
     private String ukuran;
 
-    // Constructor
-    public MenuMinuman(String namaMinuman, double hargaMinuman, String ukuran) {
-        this.namaMinuman = namaMinuman;
-        this.hargaMinuman = hargaMinuman;
+    // Constructor dan inheritence yang mewarisi dari constructor menu
+    public MenuMinuman(String nama, double harga, String ukuran) {
+        super(nama, harga);
         this.ukuran = ukuran;
     }
 
-
-    public String getNamaMinuman() {
-        return namaMinuman;
+    // Penerapan polymorphism overriding pada method
+    @Override
+    public String getKategori() {
+        return "Minuman";
     }
 
-    public void setNamaMinuman(String namaMinuman) {
-        this.namaMinuman = namaMinuman;
+    // Penerapan polymorphism overriding pada method
+    @Override
+    public void setKategori(String kategori) {
     }
 
-    public double getHargaMinuman() {
-        return hargaMinuman;
-    }
-
-    public void setHargaMinuman(double hargaMinuman) {
-        this.hargaMinuman = hargaMinuman;
-    }
-
-    public String getUkuran() {
-        return ukuran;
-    }
-
+    // Penerapan polymorphism overriding pada method
+    @Override
     public void setUkuran(String ukuran) {
         this.ukuran = ukuran;
     }
 
-    // Fungsi untuk menampilkan informasi minuman
-    public void tampilkanInfoMinuman() {
-        System.out.println("Minuman: " + namaMinuman);
-        System.out.println("Harga: " + hargaMinuman);
-        System.out.println("Ukuran: " + ukuran);
+    // Penerapan polymorphism overriding pada method
+    @Override
+    public String getUkuran() {
+        return ukuran;
     }
 }
