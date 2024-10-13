@@ -1,20 +1,54 @@
 ### Nama : Khalil Pradipta Lee
 ### NIM : 2309116046
 
-# MINI PROJECT 1 PBO
+# MINI PROJECT 2 PBO
 
-1. Tampilan menu awal
+#### Tampilan Login
 ```
-==== RESTORAN SHANHAIJING ====
+====> SELAMAT DATANG DI RESTORAN SHANHAIJING <====
+1. Masuk sebagai Admin
+2. Masuk sebagai Guest
+3. Keluar
+Pilih ingin masuk sebagai admin/guest (1-3):
+```
+
+```
+====> SELAMAT DATANG DI RESTORAN SHANHAIJING <====
+1. Masuk sebagai Admin
+2. Masuk sebagai Guest
+3. Keluar
+Pilih ingin masuk sebagai admin/guest (1-3): 1
+Masukkan username: khalil
+Masukkan password: xixixi
+Login sebagai Admin berhasil.
+```
+
+```
+====> SELAMAT DATANG DI RESTORAN SHANHAIJING <====
+1. Masuk sebagai Admin
+2. Masuk sebagai Guest
+3. Keluar
+Pilih ingin masuk sebagai admin/guest (1-3): 2
+Anda masuk sebagai guest.
+```
+
+#### 1. Tampilan menu untuk admin
+```
+====> MENU ADMIN <====
 1. Kelola Menu Makanan
 2. Kelola Menu Minuman
-3. Keluar
-Pilih menu:
+3. Logout
+Pilih menu 1-3:
 ```
+#### 2. Masuk Menu admin (makanan)
+```
+====> MENU ADMIN <====
+1. Kelola Menu Makanan
+2. Kelola Menu Minuman
+3. Logout
+Pilih menu 1-3: 1
 
-2. Tampilan menu kelola makanan
-```
-==== Kelola Menu Makanan ====
+> Kelola Menu Makanan <
 1. Tambah Menu Makanan
 2. Lihat Semua Menu Makanan
 3. Edit Menu Makanan
@@ -23,10 +57,9 @@ Pilih menu:
 =============================
 Pilih menu:
 ```
-
-3. Tambah menu makanan
+##### 3. Create admin (makanan)
 ```
-==== Kelola Menu Makanan ====
+> Kelola Menu Makanan <
 1. Tambah Menu Makanan
 2. Lihat Semua Menu Makanan
 3. Edit Menu Makanan
@@ -35,14 +68,14 @@ Pilih menu:
 =============================
 Pilih menu: 1
 Masukkan nama makanan (ex:Bakpao): Bakpao
-Masukkan harga (ex:20000): 20000
-Masukkan kategori makanan (ex:Seafood): Seafood
-Menu makanan berhasil ditambahkan.
+Masukkan harga makanan (ex:30000): 35000
+Masukkan kategori makanan (ex:Cuisine): Cuisine
+Bakpao berhasil ditambahkan ke menu makanan.
 ```
 
-4. Lihat menu makanan
+#### 4. Read admin (makanan)
 ```
-==== Kelola Menu Makanan ====
+> Kelola Menu Makanan <
 1. Tambah Menu Makanan
 2. Lihat Semua Menu Makanan
 3. Edit Menu Makanan
@@ -50,13 +83,16 @@ Menu makanan berhasil ditambahkan.
 5. Kembali
 =============================
 Pilih menu: 2
-Daftar Menu Makanan:
-[0] Bakpao - 20000.0 - Seafood
+[0]
+Nama Makanan : Bakpao
+Harga        : 35000.0
+Kategori     : Cuisine
+-----------------------------
 ```
 
-5. Edit menu makanan
+#### 5. Update admin (makanan)
 ```
-==== Kelola Menu Makanan ====
+> Kelola Menu Makanan <
 1. Tambah Menu Makanan
 2. Lihat Semua Menu Makanan
 3. Edit Menu Makanan
@@ -64,18 +100,35 @@ Daftar Menu Makanan:
 5. Kembali
 =============================
 Pilih menu: 3
-Daftar Menu Makanan:
-[0] Bakpao - 20000.0 - Seafood
+[0]
+Nama Makanan : Bakpao
+Harga        : 35000.0
+Kategori     : Cuisine
+-----------------------------
 Masukkan indeks makanan yang ingin diubah (ex:0): 0
-Masukkan nama baru (ex: Bakpao): tes
-Masukkan harga baru (ex: 20000): 123
-Masukkan kategori baru (ex: Seafood): tes
-Menu makanan berhasil diubah.
+Masukkan nama makanan baru (ex:Siomay): Siomay
+Masukkan harga makanan baru (ex:10000): 10000
+Masukkan kategori makanan baru (ex:Seafood): Seafood
+Menu makanan Siomay berhasil diubah.
+
+> Kelola Menu Makanan <
+1. Tambah Menu Makanan
+2. Lihat Semua Menu Makanan
+3. Edit Menu Makanan
+4. Hapus Menu Makanan
+5. Kembali
+=============================
+Pilih menu: 2
+[0]
+Nama Makanan : Siomay
+Harga        : 10000.0
+Kategori     : Seafood
+-----------------------------
 ```
 
-6. Hapus menu makanan
+#### 6. Delete admin (makanan)
 ```
-==== Kelola Menu Makanan ====
+> Kelola Menu Makanan <
 1. Tambah Menu Makanan
 2. Lihat Semua Menu Makanan
 3. Edit Menu Makanan
@@ -83,15 +136,24 @@ Menu makanan berhasil diubah.
 5. Kembali
 =============================
 Pilih menu: 4
-Daftar Menu Makanan:
-[0] tes - 123.0 - tes
-Masukkan indeks makanan yang ingin dihapus (ex:0) : 0
-Menu makanan berhasil dihapus.
+[0]
+Nama Makanan : Siomay
+Harga        : 10000.0
+Kategori     : Seafood
+-----------------------------
+Masukkan indeks makanan yang ingin dihapus (ex:0): 0
+Siomay berhasil dihapus dari menu makanan.
 ```
 
-7. Tampilan menu kelola minuman
+#### 7. Masuk Menu Admin (minuman)
 ```
-==== Kelola Menu Minuman ====
+====> MENU ADMIN <====
+1. Kelola Menu Makanan
+2. Kelola Menu Minuman
+3. Logout
+Pilih menu 1-3: 2
+
+> Kelola Menu Minuman <
 1. Tambah Menu Minuman
 2. Lihat Semua Menu Minuman
 3. Edit Menu Minuman
@@ -101,9 +163,9 @@ Menu makanan berhasil dihapus.
 Pilih menu:
 ```
 
-8. Tambah menu minuman
+#### 8. Create admin (minuman)
 ```
-==== Kelola Menu Minuman ====
+> Kelola Menu Minuman <
 1. Tambah Menu Minuman
 2. Lihat Semua Menu Minuman
 3. Edit Menu Minuman
@@ -111,15 +173,15 @@ Pilih menu:
 5. Kembali
 =============================
 Pilih menu: 1
-Masukkan nama minuman (ex: Es Jeruk): Es Jeruk
-Masukkan harga (ex:5000): 5000
-Masukkan ukuran minuman (ex: Medium): Medium
-Menu minuman berhasil ditambahkan.
+Masukkan nama minuman (ex:Es Teh): Es Teh
+Masukkan harga (ex:6000): 6000
+Masukkan ukuran minuman (ex:Medium): Medium
+Es Teh berhasil ditambahkan ke menu minuman.
 ```
 
-9. Lihat menu minuman
+#### 9. Read admin (minuman)
 ```
-==== Kelola Menu Minuman ====
+> Kelola Menu Minuman <
 1. Tambah Menu Minuman
 2. Lihat Semua Menu Minuman
 3. Edit Menu Minuman
@@ -127,13 +189,16 @@ Menu minuman berhasil ditambahkan.
 5. Kembali
 =============================
 Pilih menu: 2
-Daftar Menu Minuman:
-[0] Es Jeruk - 5000.0 - Medium
+[0]
+Nama Minuman : Es Teh
+Harga        : 6000.0
+Ukuran       : Medium
+-----------------------------
 ```
 
-10. Edit menu minuman
+#### 10. Update admin (minuman)
 ```
-==== Kelola Menu Minuman ====
+> Kelola Menu Minuman <
 1. Tambah Menu Minuman
 2. Lihat Semua Menu Minuman
 3. Edit Menu Minuman
@@ -141,18 +206,35 @@ Daftar Menu Minuman:
 5. Kembali
 =============================
 Pilih menu: 3
-Daftar Menu Minuman:
-[0] Es Jeruk - 5000.0 - Medium
-Masukkan indeks minuman yang ingin diubah (ex: 0): 0
-Masukkan nama baru (ex: Es Jeruk)123
-Masukkan harga baru (ex: 5000): 999
-Masukkan ukuran baru (ex: Medium) small
-Menu minuman berhasil diubah.
+[0]
+Nama Minuman : Es Teh
+Harga        : 6000.0
+Ukuran       : Medium
+-----------------------------
+Masukkan indeks minuman yang ingin diubah (ex:0): 0
+Masukkan nama baru (ex:Es Jeruk): Es Jeruk
+Masukkan harga baru (ex:7000): 7000
+Masukkan ukuran baru (ex:Small): Small
+Menu minuman Es Jeruk berhasil diubah.
+
+> Kelola Menu Minuman <
+1. Tambah Menu Minuman
+2. Lihat Semua Menu Minuman
+3. Edit Menu Minuman
+4. Hapus Menu Minuman
+5. Kembali
+=============================
+Pilih menu: 2
+[0]
+Nama Minuman : Es Jeruk
+Harga        : 7000.0
+Ukuran       : Small
+-----------------------------
 ```
 
-11. Hapus menu minuman
+#### 11. Delete admin (minuman)
 ```
-==== Kelola Menu Minuman ====
+> Kelola Menu Minuman <
 1. Tambah Menu Minuman
 2. Lihat Semua Menu Minuman
 3. Edit Menu Minuman
@@ -160,18 +242,35 @@ Menu minuman berhasil diubah.
 5. Kembali
 =============================
 Pilih menu: 4
-Daftar Menu Minuman:
-[0] 123 - 999.0 - small
-Masukkan indeks minuman yang ingin dihapus (ex:0) 0
-Menu minuman berhasil dihapus.
+[0]
+Nama Minuman : Es Jeruk
+Harga        : 7000.0
+Ukuran       : Small
+-----------------------------
+Masukkan indeks minuman yang ingin dihapus (ex:0): 0
+Es Jeruk berhasil dihapus dari menu minuman.
 ```
 
-12. Keluar dari aplikasi
+#### 12. Menu Pelanggan/Guest
 ```
-==== RESTORAN SHANHAIJING ====
-1. Kelola Menu Makanan
-2. Kelola Menu Minuman
+====> MENU PELANGGAN <====
+1. Lihat Menu Makanan
+2. Lihat Menu Minuman
+3. Keluar
+Pilih menu: 1
+Tidak ada menu makanan yang tersedia saat ini.
+
+====> MENU PELANGGAN <====
+1. Lihat Menu Makanan
+2. Lihat Menu Minuman
+3. Keluar
+Pilih menu: 2
+Tidak ada menu minuman yang tersedia saat ini.
+
+====> MENU PELANGGAN <====
+1. Lihat Menu Makanan
+2. Lihat Menu Minuman
 3. Keluar
 Pilih menu: 3
-Keluar dari aplikasi...
+Keluar dari menu pelanggan. Kembali ke menu login.
 ```
